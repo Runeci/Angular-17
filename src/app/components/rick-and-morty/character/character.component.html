@@ -1,0 +1,9 @@
+@if (isVisible) {
+  <div class="container" [routerLink]="[character.id]" routerLinkActive="active">
+    <div class="">{{ character.name}}</div>
+    <img [ngSrc]="character.image" width="200" height="200" priority>
+  </div>
+} @else {
+  <div>Error</div>
+}
+

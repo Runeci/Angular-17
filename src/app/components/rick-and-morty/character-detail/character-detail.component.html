@@ -1,0 +1,10 @@
+@if (character) {
+  <div class="container detail">
+    <h2>{{ character.name }}</h2>
+    <p>{{ character.location.name }}</p>
+    <img [ngSrc]="character.image" width="300" height="300" priority>
+    <button mat-flat-button routerLink="/rick-and-morty">X</button>
+  </div>
+} @else {
+  <div>No info</div>
+}

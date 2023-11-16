@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  @for (link of links;track link.key) {
+    <button
+      color="accent"
+      mat-raised-button
+      [routerLink]="link.key"
+      routerLinkActive="active"
+    >{{ link.value }}
+    </button>
+  }
+</mat-toolbar>

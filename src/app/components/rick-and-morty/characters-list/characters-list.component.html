@@ -1,0 +1,11 @@
+<div class="list-container">
+  @if (characters) {
+    @for (character of characters; track character.id) {
+      <app-character [character]="character" isVisible="true"></app-character>
+    } @empty {
+      <div>Not found</div>
+    }
+  }
+</div>
+
+

@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #b0bec5;
+  padding: 16px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}
+
+:host {
+    view-transition-name: preview;
+}
